@@ -1,0 +1,589 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo|BioRhyme:800|Just+Another+Hand|Nosifer|Russo+One';
+body{
+	margin: auto;
+} /*fin body*/ 
+ 
+*{
+	box-sizing: border-box 
+}
+
+img{
+	height: 6rem;
+} 
+
+.img_total_contenedor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.nav_morado{
+    background: #4E0148;
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+
+
+.nav_verde{
+    background: #005c29;
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+
+.nav_verde a {
+    color: white;
+    padding: 16px;
+    font-family: 'BioRhyme', serif;
+    font-size: 120%;
+    text-decoration: none;
+    border-radius: 3px;
+    display: flex;
+    min-width: 6rem;
+ }
+
+.nav_verde a:hover {
+    background: #C4C1C1;
+    color: black;
+    
+ }
+
+
+
+
+
+.ul_botones{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.li_botones  {
+    display: flex;
+    text-align: center;
+}
+
+.nav_morado a {
+    color: white;
+    padding: 16px;
+    font-family: 'BioRhyme', serif;
+    font-size: 165%;
+    text-decoration: none;
+    border-radius: 3px;
+    display: flex;
+    min-width: 6rem;
+ }
+
+.nav_morado a:hover {
+    background: #C4C1C1;
+    color: black;
+    
+ }
+
+
+ .li_responsive {
+    display: none;
+ }
+
+
+ .li_responsive ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+ }
+ .li_responsive:hover > ul{
+    display: block;
+    text-align: left;
+ }
+
+ .li_responsive li{
+    position: relative;
+    margin-left: -75%;
+    width: 100%;
+    display: block;
+    text-align: center;
+ }
+
+
+
+@media only screen and (max-width: 1100px) {
+    /* For mobile phones: */
+    .ul_botones{
+    align-items: center;
+    flex-direction: row-reverse;
+    }
+
+    .li_botones{
+        display: none;
+    }
+
+    .li_responsive{
+        display: block;
+        text-align: center;  
+    }
+
+    .nav_verde a{
+        color: black;
+        background: #005c29;
+        font-size: 120%;
+    }   
+}
+
+@media only screen and (max-height: 540px)  {
+    .img_para_background{
+        height: 120%
+    }
+
+}
+
+@media only screen and (max-height: 440px)  {
+    .img_para_background{
+        height: 140%
+    }
+
+}
+
+@media only screen and (max-height: 365px)  {
+    .img_para_background{
+        height: 170%
+    }
+
+}
+
+@media only screen and (max-height: 365px)  {
+    .img_para_background{
+        height: 195%
+    }
+}
+
+
+
+
+
+/*-----header morado-------*/
+ 
+.header_morado{ 
+	top: 0;
+    display: flex;
+    background: #4E0148;
+    color: white;
+    overflow: visible;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    opacity: 0.9;
+}
+ 
+
+/*----- fin header morado----------*/
+
+/*-----header verde-------*/
+ 
+.header_verde{ 
+    top: 0;
+    display: flex;
+    background: #005c29;
+    color: white;
+    overflow: visible;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    opacity: 0.9;
+}
+ 
+
+/*----- fin header verde----------*/
+
+
+/*------- section 1---------*/
+.section1{
+    text-align: center; */
+    display: block;
+    height: 30rem;
+    margin: 0;
+}
+
+.article1{ 
+	margin: 0;
+    padding: 4% 0;
+}
+
+
+.titulo_ppal{
+    color: white;
+    font-size: -webkit-xxx-large;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+}
+
+/*-------- fin section 1--------*/
+
+
+/*------- section2 ---------*/
+
+.section2{
+	height: 30%;
+}
+
+
+.div_particiones{ 
+    width: 0px;
+    height: 0px;
+    margin: 2% auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.div_particiones span{
+    color: white;
+}
+.div_particiones a{
+    color          : black;
+    border-radius: 4%;
+    display: none;
+    font-family    : 'BioRhyme', serif;
+    font-size: 150%;
+    text-decoration: none;
+    margin: 0;
+}
+
+.div_particiones:hover > a{
+    display: block;
+    background: #C4C1C1;
+    
+}
+.particiones{
+    background: #005c29;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.li_tres_colores{ 
+	text-align: center;
+    width: 33.33333%;
+    padding: 8%;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 130%;
+}
+
+.li_tres_colores a{
+	color          : white;
+	display: inline-block;
+	font-family    : 'BioRhyme', serif;
+	font-size: 75%;
+	text-decoration: none;
+	margin: 0;
+}
+
+.li_tres_colores:nth-child(1){
+	background: #4E0148;
+}
+
+.li_tres_colores:nth-child(2){
+	background: #F209FB;
+}
+
+.li_tres_colores:nth-child(3){
+	background: #D29F05;
+}
+
+/*------- fin section2 ---------*/
+
+
+/*---------- section3 ----------*/
+
+.section3{
+    margin-top: 5%; 
+	height: 70%;
+	text-align: center;
+    background: white;
+}
+
+
+.item{
+    margin: 1%;
+    text-align: center;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contenedor_res{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.grupo_formu{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.grupo_formu input{
+	margin-top: 1%;
+	width: 100%;
+}
+
+.grupo_formu textarea{
+	margin: 1% 0;
+	width: 100%;
+	height: 15rem;
+}
+
+.item span{
+	display: none;
+	margin: 4% 0;
+    text-align: justify;
+}
+
+.item:hover > span{
+    display: block;
+}
+
+.contacto_logo{
+	border-radius: 50%;
+	width: 40%;
+	height: 40%;
+}
+
+.btn_amarillo{
+	background-color: #D29F05;
+    border-radius: 5px;
+    padding: 2%;
+    margin: auto;
+    width: initial;
+    height: initial;
+	border: none;
+}
+
+.btn_verde{
+    background-color: #005c29;
+    border-radius: 5px;
+    padding: 4%;
+    margin: 6% auto;
+    width: initial;
+    display: block;
+    height: initial;
+    border: none;
+    color: white;
+}
+
+.btn_verde:hover{
+    background: #CFCECE;
+    color:#005c29;
+}
+
+.le_verde{
+    color:#005c29;
+}
+
+/*========= fin section3=========*/
+
+
+/*---------- section4 ------------*/
+
+.medio_contenedor{
+	width: 49.8%;
+	display: inline-block;
+}
+
+.section4{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.info_morada{
+	display: block;
+	margin: 1% 0;
+	color: #4E0148;
+}
+
+.bg_verde{
+    background: #005c29;
+}
+
+.item2{
+    padding: 3% 0%;
+    margin: 1%;
+    text-align: center;
+}
+
+.contacto_logo_grande{
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+
+.le_blanca{
+    display: none;
+    color: white;
+    background: #5A5959;
+    padding: 4% 10%;
+}
+
+.titulo_2_blanco{
+    color: white;
+    text-align: center;
+    font-size: 250%;
+}
+
+.item2:hover > .le_blanca{
+    display: inline-block;
+}
+
+.item2:hover > .contacto_logo_grande{
+    opacity: 0.6;
+}
+
+
+
+
+/*========== fin section4===========*/
+
+.article_1{
+    background-image: url('/imagenes/canchacotecnova.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 25rem;
+}
+
+.article_2{
+    background: #005c29;
+    display: flex;
+    padding: 3% 0;
+}
+
+.img_para_background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30rem;
+}
+
+.contenedor2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item3{
+    margin: 1%;
+    text-align: center;
+    width: 60%;
+}
+
+/*------btn_morado---------*/
+.btn_morado{
+    background-color: #4E0148;
+    border-radius: 5px;
+    padding: 3%;
+    margin: auto;
+    border: none;
+    color: white;
+    float: inherit;  
+}
+
+.btn_morado a{
+	color: white;
+	text-decoration: none;
+}
+
+.btn_morado:hover{
+	background-color: #400449;
+}
+
+/*-------fin btn_morado--------*/
+
+
+/*-----------footer-----------------*/
+.footer_morado{
+	display: flex;
+    justify-content: center;
+    background: #4E0148;
+    color: white;
+    padding: 2% 0% 1% 3%;
+}
+
+
+.footer_morado i{
+	margin: 0 2%;
+}
+
+/*========== fin footer============*/
+
+
+
+@media only screen and (max-width: 670px)  {
+    .particiones{
+        display: block;
+    }
+
+    .div_particiones{
+        display: flex;
+        width: 100%;
+        margin:0;
+        border-radius: 0;
+        /*justify-content: inherit;*/
+    }
+
+    .div_particiones a{
+        font-size: 120%;
+    }
+
+    .fa-4x{
+        font-size: 2em;
+    }
+
+    .item{
+        border: 2px solid #005c29;
+    }
+
+    .contenedor_res{
+        display: block;
+    }
+
+
+}
+
+@media only screen and (max-width: 470px)  {
+    .le_blanca{
+        font-size: 80%;
+    }
+
+    .titulo_2_blanco{
+        font-size: 80%;
+    }
+}
